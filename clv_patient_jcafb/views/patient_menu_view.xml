@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <menuitem
+        id="clv_patient.menu_base_base_patients"
+        name="Patients"
+        parent="clv_base.menu_base_base"
+        groups="clv_patient.group_user"
+        sequence="10"
+        action="clv_patient.clv_patient_action"/>
+
+    </data>
+</odoo>
