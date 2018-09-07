@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        
+    <record id="view_res_partner_form_document" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <page name="sales_purchases" position="after">
+                <page name="documents" string="Documents">
+                    <group>
+                        <field name="count_documents"/>
+                        <field name="document_ids" colspan="4" nolabel="1"/>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+
+    <!--record id="res_partner_view_tree_document" model="ir.ui.view">
+        <field name="name">res.partner.tree</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="res_partner.res_partner_view_tree"/>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="count_documents"/>
+            </field>
+        </field>
+    </record-->
+
+    <record id="clv_document_view_form_partner" model="ir.ui.view">
+        <field name="name">clv.document.form</field>
+        <field name="model">clv.document</field>
+        <field name="inherit_id" ref="clv_document.clv_document_view_form"/>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <group name="group_right" position="inside">
+                <field name="partner_id"  options="{'no_open': False, 'no_create': True}"/>
+                <!--field name="partner_code"/-->
+                <!--field name="partner_employee_id" options="{'no_open': False, 'no_create': True}"/-->
+            </group>
+        </field>
+    </record>
+
+    <record id="clv_document_view_tree_partner" model="ir.ui.view">
+        <field name="name">clv.document.tree</field>
+        <field name="model">clv.document</field>
+        <field name="inherit_id" ref="clv_document.clv_document_view_tree"/>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <field name="date_requested" position="before">
+                <field name="partner_id"/>
+                <!--field name="partner_employee_id"/-->
+            </field>
+        </field>
+    </record>
+
+    <record id="clv_document_view_search_partner" model="ir.ui.view">
+        <field name="name">clv.document.search</field>
+        <field name="model">clv.document</field>
+        <field name="inherit_id" ref="clv_document.clv_document_view_search"/>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <field name="date_requested" position="before">
+                <field name="partner_id"/>
+                <!--field name="partner_employee_id"/-->
+            </field>
+            <group name="group_by" position="inside">
+                <filter string="Partner" context="{'group_by': 'partner_id'}"/>
+                <!--filter string="Responsible Empĺoyee (Partner)" domain="[]"  context="{'group_by': 'partner_employee_id'}"/-->
+            </group>
+        </field>
+    </record>
+
+</odoo>
