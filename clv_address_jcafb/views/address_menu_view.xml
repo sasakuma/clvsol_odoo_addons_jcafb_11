@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem name="Addresses" id="clv_address.menu_community_community_addresses"
+            parent="clv_base.menu_community_community"
+            groups="clv_address.group_user"
+            sequence="15"
+            action="clv_address.clv_address_action"/>
+
+    </data>
+</odoo>
