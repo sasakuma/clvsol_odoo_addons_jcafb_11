@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem name="Animals" id="clv_animal.menu_community_community_animals"
+            parent="clv_base.menu_community_community"
+            groups="clv_animal.group_user"
+            sequence="90"
+            action="clv_animal.clv_animal_action"/>
+
+    </data>
+</odoo>
