@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="clv_document_referenceable_model_person" model="clv.document.referenceable.model">
+            <field name="name">Person</field>
+            <field name="model">clv.person</field>
+            <field name="priority">10</field>
+        </record>
+
+    </data>
+</odoo>
