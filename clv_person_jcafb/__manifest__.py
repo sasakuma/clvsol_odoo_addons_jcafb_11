@@ -19,8 +19,8 @@
 ###############################################################################
 
 {
-    'name': 'Patient (customizations for CLVhealth-JCAFB Solution)',
-    'summary': 'Patient Module customizations for CLVhealth-JCAFB Solution.',
+    'name': 'Person (customizations for CLVhealth-JCAFB Solution)',
+    'summary': 'Person Module customizations for CLVhealth-JCAFB Solution.',
     'version': '4.0.0',
     'author': 'Carlos Eduardo Vercelino - CLVsol',
     'category': 'Generic Modules/Others',
@@ -28,12 +28,12 @@
     'website': 'https://github.com/CLVsol',
     'depends': [
         'clv_base_jcafb',
-        'clv_patient',
+        'clv_person',
     ],
     'data': [
         'data/document_referenceable_model.xml',
-        'views/patient_view.xml',
-        'views/patient_menu_view.xml',
+        'views/person_view.xml',
+        'views/person_menu_view.xml',
     ],
     'demo': [],
     'test': [],

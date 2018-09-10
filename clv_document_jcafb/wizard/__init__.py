@@ -18,30 +18,7 @@
 #
 ###############################################################################
 
-{
-    'name': 'Patient (customizations for CLVhealth-JCAFB Solution)',
-    'summary': 'Patient Module customizations for CLVhealth-JCAFB Solution.',
-    'version': '4.0.0',
-    'author': 'Carlos Eduardo Vercelino - CLVsol',
-    'category': 'Generic Modules/Others',
-    'license': 'AGPL-3',
-    'website': 'https://github.com/CLVsol',
-    'depends': [
-        'clv_base_jcafb',
-        'clv_patient',
-    ],
-    'data': [
-        'data/document_referenceable_model.xml',
-        'views/patient_view.xml',
-        'views/patient_menu_view.xml',
-    ],
-    'demo': [],
-    'test': [],
-    'init_xml': [],
-    'test': [],
-    'update_xml': [],
-    'installable': True,
-    'application': False,
-    'active': False,
-    'css': [],
-}
+# from . import document_updt
+# from . import document_item_edit
+# from . import document_item_updt_from_survey
+# from . import document_type_setup
