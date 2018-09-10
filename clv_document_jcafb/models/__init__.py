@@ -22,8 +22,3 @@
 # from . import document_reg_state
 # from . import document_state
 # from . import document
-from . import person
-from . import patient
-from . import address
-from . import animal
-from . import res_partner
