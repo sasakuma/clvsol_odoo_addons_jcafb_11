@@ -18,30 +18,27 @@
 #
 ###############################################################################
 
-{
-    'name': 'Animal (customizations for CLVhealth-JCAFB Solution)',
-    'summary': 'Animal Module customizations for CLVhealth-JCAFB Solution.',
-    'version': '4.0.0',
-    'author': 'Carlos Eduardo Vercelino - CLVsol',
-    'category': 'Generic Modules/Others',
-    'license': 'AGPL-3',
-    'website': 'https://github.com/CLVsol',
-    'depends': [
-        'clv_base_jcafb',
-        'clv_animal',
-    ],
-    'data': [
-        'data/document_referenceable_model.xml',
-        'views/animal_view.xml',
-        'views/animal_menu_view.xml',
-    ],
-    'demo': [],
-    'test': [],
-    'init_xml': [],
-    'test': [],
-    'update_xml': [],
-    'installable': True,
-    'application': False,
-    'active': False,
-    'css': [],
-}
+# from odoo import api, fields, models
+from odoo import api, fields, models
+
+
+class Animal(models.Model):
+    _inherit = 'clv.animal'
+
+    document_ids = fields.One2many(
+        string='Documents',
+        comodel_name='clv.document',
+        compute='_compute_document_ids_and_count',
+    )
+    count_documents = fields.Integer(
+        compute='_compute_document_ids_and_count',
+    )
+
+    @api.multi
+    def _compute_document_ids_and_count(self):
+        for record in self:
+            documents = self.env['clv.document'].search([
+                ('ref_id', '=', self._name + ',' + str(record.id)),
+            ])
+            record.count_documents = len(documents)
+            record.document_ids = [(6, 0, documents.ids)]
