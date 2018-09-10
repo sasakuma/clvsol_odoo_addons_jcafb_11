@@ -18,4 +18,26 @@
 #
 ###############################################################################
 
-from . import models
+from odoo import api, fields, models
+
+
+class Address(models.Model):
+    _inherit = 'clv.address'
+
+    document_ids = fields.One2many(
+        string='Documents',
+        comodel_name='clv.document',
+        compute='_compute_document_ids_and_count',
+    )
+    count_documents = fields.Integer(
+        compute='_compute_document_ids_and_count',
+    )
+
+    @api.multi
+    def _compute_document_ids_and_count(self):
+        for record in self:
+            documents = self.env['clv.document'].search([
+                ('ref_id', '=', self._name + ',' + str(record.id)),
+            ])
+            record.count_documents = len(documents)
+            record.document_ids = [(6, 0, documents.ids)]

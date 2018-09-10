@@ -27,9 +27,12 @@
     'license': 'AGPL-3',
     'website': 'https://github.com/CLVsol',
     'depends': [
+        'clv_base_jcafb',
         'clv_address',
     ],
     'data': [
+        'data/document_referenceable_model.xml',
+        'views/address_view.xml',
         'views/address_menu_view.xml',
     ],
     'demo': [],
