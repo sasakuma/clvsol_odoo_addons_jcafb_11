@@ -3,9 +3,9 @@
     <data>
 
     <menuitem
-        id="clv_patient.menu_base_base_patients"
+        id="clv_patient.menu_health_patients"
         name="Patients"
-        parent="clv_base.menu_base_base"
+        parent="clv_base.menu_health"
         groups="clv_patient.group_user"
         sequence="10"
         action="clv_patient.clv_patient_action"/>
