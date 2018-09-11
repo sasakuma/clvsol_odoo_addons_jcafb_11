@@ -13,11 +13,11 @@
             groups="clv_document.group_user"
             sequence="30"/>
 
-        <!--menuitem name="Categories" id="clv_document.menu_base_config_config_document_categories" 
+        <menuitem name="Categories" id="clv_document.menu_base_config_config_document_categories" 
             parent="clv_document.menu_base_config_config_document"
             groups="clv_document.group_user"
             sequence="10"
-            action="clv_document.clv_document_category_action"/-->
+            action="clv_document.clv_document_category_action"/>
 
         <!--menuitem name="Types" id="clv_document.menu_base_config_config_document_types"
             parent="clv_document.menu_base_config_config_document"
