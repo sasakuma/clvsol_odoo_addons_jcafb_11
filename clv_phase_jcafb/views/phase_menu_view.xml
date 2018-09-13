@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <menuitem
+        id="clv_phase.menu_base_base_phases"
+        name="Phases"
+        parent="clv_base.menu_base_base"
+        groups="clv_phase.group_user"
+        sequence="15"
+        action="clv_phase.clv_phase_action"/>
+
+    </data>
+</odoo>
