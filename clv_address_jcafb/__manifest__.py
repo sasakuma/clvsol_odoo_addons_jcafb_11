@@ -32,6 +32,7 @@
     ],
     'data': [
         'data/document_referenceable_model.xml',
+        'data/lab_test_referenceable_model.xml',
         'views/address_view.xml',
         'views/address_menu_view.xml',
     ],
