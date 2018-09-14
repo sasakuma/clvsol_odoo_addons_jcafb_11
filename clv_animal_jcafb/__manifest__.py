@@ -32,6 +32,7 @@
     ],
     'data': [
         'data/document_referenceable_model.xml',
+        'data/lab_test_referenceable_model.xml',
         'views/animal_view.xml',
         'views/animal_menu_view.xml',
     ],
