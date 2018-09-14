@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="clv_lab_test_referenceable_model_address" model="clv.lab_test.referenceable.model">
+            <field name="name">Address</field>
+            <field name="model">clv.address</field>
+            <field name="priority">10</field>
+        </record>
+
+    </data>
+</odoo>
