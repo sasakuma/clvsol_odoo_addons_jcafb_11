@@ -4,7 +4,7 @@
 
 <odoo noupdate="1">
 
-    <record id="clv_event_referenceable_model_animal" model="clv.event.referenceable.model">
+    <record id="clv_event_attendee_referenceable_model_animal" model="clv.event.attendee.referenceable.model">
         <field name="name">Animal</field>
         <field name="model">clv.animal</field>
         <field name="priority">10</field>
