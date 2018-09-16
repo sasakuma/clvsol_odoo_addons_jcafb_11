@@ -19,10 +19,10 @@
     ],
     'data': [
         'data/document_referenceable_model.xml',
-        'data/event_referenceable_model.xml',
+        'data/event_attendee_referenceable_model.xml',
         'data/lab_test_referenceable_model.xml',
         'views/document_view.xml',
-        'views/event_view.xml',
+        'views/event_attendee_view.xml',
         'views/lab_test_view.xml',
         'views/patient_menu_view.xml',
     ],
