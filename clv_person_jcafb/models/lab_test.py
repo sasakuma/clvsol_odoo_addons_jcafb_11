@@ -24,7 +24,7 @@ class Person(models.Model):
                 ('ref_id', '=', self._name + ',' + str(record.id)),
             ])
             record.count_lab_test_requests = len(lab_test_requests)
-            record.lab_test.request_ids = [(6, 0, lab_test_requests.ids)]
+            record.lab_test_request_ids = [(6, 0, lab_test_requests.ids)]
 
     lab_test_result_ids = fields.One2many(
         string='Lab Test Results',
@@ -42,7 +42,7 @@ class Person(models.Model):
                 ('ref_id', '=', self._name + ',' + str(record.id)),
             ])
             record.count_lab_test_results = len(lab_test_results)
-            record.lab_test.result_ids = [(6, 0, lab_test_results.ids)]
+            record.lab_test_result_ids = [(6, 0, lab_test_results.ids)]
 
     lab_test_report_ids = fields.One2many(
         string='Lab Test Reports',
@@ -60,4 +60,4 @@ class Person(models.Model):
                 ('ref_id', '=', self._name + ',' + str(record.id)),
             ])
             record.count_lab_test_reports = len(lab_test_reports)
-            record.lab_test.report_ids = [(6, 0, lab_test_reports.ids)]
+            record.lab_test_report_ids = [(6, 0, lab_test_reports.ids)]
