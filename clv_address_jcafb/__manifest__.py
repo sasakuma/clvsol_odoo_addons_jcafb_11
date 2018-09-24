@@ -18,9 +18,9 @@
         'clv_lab_test',
     ],
     'data': [
-        'data/document_referenceable_model.xml',
-        'data/event_attendee_referenceable_model.xml',
-        'data/lab_test_referenceable_model.xml',
+        'data/document.xml',
+        'data/event_attendee.xml',
+        'data/lab_test.xml',
         'views/document_view.xml',
         'views/event_attendee_view.xml',
         'views/lab_test_view.xml',

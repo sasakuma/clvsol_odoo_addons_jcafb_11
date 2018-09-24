@@ -27,10 +27,4 @@
         sequence="10"
         action="clv_event.clv_event_category_action"/>
 
-    <menuitem name="Attendee Referenceable Models" id="clv_event.menu_base_config_config_event_attendee_referenceable_models"
-        parent="clv_event.menu_base_config_config_event"
-        groups="clv_event.group_user"
-        sequence="100"
-        action="clv_event.clv_event_attendee_referenceable_model_action"/>
-
 </odoo>
