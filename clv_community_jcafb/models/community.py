@@ -5,9 +5,9 @@
 from odoo import fields, models
 
 
-class Event(models.Model):
-    _name = "clv.event"
-    _inherit = 'clv.event'
+class Community(models.Model):
+    _name = "clv.community"
+    _inherit = 'clv.community'
 
     employee_id = fields.Many2one(
         comodel_name='hr.employee',

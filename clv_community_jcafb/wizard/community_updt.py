@@ -9,8 +9,8 @@ from odoo import api, fields, models
 _logger = logging.getLogger(__name__)
 
 
-class EventUpdate(models.TransientModel):
-    _inherit = 'clv.event.updt'
+class CommunityUpdate(models.TransientModel):
+    _inherit = 'clv.community.updt'
 
     employee_id = fields.Many2one(
         comodel_name='hr.employee',
@@ -23,18 +23,18 @@ class EventUpdate(models.TransientModel):
     )
 
     @api.multi
-    def do_event_updt(self):
+    def do_community_updt(self):
         self.ensure_one()
 
-        super(EventUpdate, self).do_event_updt()
+        super(CommunityUpdate, self).do_community_updt()
 
-        for event in self.event_ids:
+        for community in self.community_ids:
 
-            _logger.info(u'%s %s', '>>>>>', event.name)
+            _logger.info(u'%s %s', '>>>>>', community.name)
 
             if self.employee_id_selection == 'set':
-                event.employee_id = self.employee_id
+                community.employee_id = self.employee_id
             if self.employee_id_selection == 'remove':
-                event.employee_id = False
+                community.employee_id = False
 
         return True
