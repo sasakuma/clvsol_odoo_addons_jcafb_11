@@ -21,8 +21,12 @@ class Person(models.Model):
     @api.multi
     def _compute_document_ids_and_count(self):
         for record in self:
-            documents = self.env['clv.document'].search([
+
+            search_domain = [
                 ('ref_id', '=', self._name + ',' + str(record.id)),
-            ])
+            ]
+
+            documents = self.env['clv.document'].search(search_domain)
+
             record.count_documents = len(documents)
             record.document_ids = [(6, 0, documents.ids)]
