@@ -27,6 +27,7 @@
         'views/community_member_view.xml',
         'views/event_attendee_view.xml',
         'views/lab_test_view.xml',
+        'views/person_history_view.xml',
         'views/person_menu_view.xml',
     ],
     'demo': [],
