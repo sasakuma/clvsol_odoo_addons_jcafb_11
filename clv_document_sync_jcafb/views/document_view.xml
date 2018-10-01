@@ -4,7 +4,7 @@
 
 <odoo>
         
-    <record id="clv_document_view_form_biobox" model="ir.ui.view">
+    <record id="clv_document_view_form_external_sync" model="ir.ui.view">
         <field name="name">clv.document.form</field>
         <field name="model">clv.document</field>
         <field name="inherit_id" ref="clv_document.clv_document_view_form"/>
@@ -21,7 +21,7 @@
         </field>
     </record>
 
-    <record id="clv_document_view_tree_biobox" model="ir.ui.view">
+    <record id="clv_document_view_tree_external_sync" model="ir.ui.view">
         <field name="name">clv.document.tree</field>
         <field name="model">clv.document</field>
         <field name="inherit_id" ref="clv_document.clv_document_view_tree"/>
@@ -33,7 +33,7 @@
         </field>
     </record>
 
-    <record id="clv_document_view_search_biobox" model="ir.ui.view">
+    <record id="clv_document_view_search_external_sync" model="ir.ui.view">
         <field name="name">clv.document.search</field>
         <field name="model">clv.document</field>
         <field name="inherit_id" ref="clv_document.clv_document_view_search"/>
