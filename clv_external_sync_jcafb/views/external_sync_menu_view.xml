@@ -15,22 +15,22 @@
         sequence="10"
         action="clv_external_sync.clv_external_sync_host_action"/>
 
-    <menuitem name="Templates" id="clv_external_sync.menu_base_config_config_external_sync_templates" 
+    <menuitem name="Object Fields" id="menu_base_config_config_external_sync_object_fields"
         parent="clv_external_sync.menu_base_config_config_external_sync"
         groups="clv_external_sync.group_user"
         sequence="20"
-        action="clv_external_sync.clv_external_sync_template_action"/>
+        action="clv_external_sync.clv_external_sync_object_field_action"/>
 
-    <menuitem name="Object Fields" id="clv_external_sync.menu_base_config_config_external_sync_templates_object_fields"
-        parent="clv_external_sync.menu_base_config_config_external_sync_templates"
+    <menuitem name="Templates" id="clv_external_sync.menu_base_config_config_external_sync_templates" 
+        parent="clv_external_sync.menu_base_config_config_external_sync"
         groups="clv_external_sync.group_user"
-        sequence="10"
-        action="clv_external_sync.clv_external_sync_template_object_field_action"/>
+        sequence="30"
+        action="clv_external_sync.clv_external_sync_template_action"/>
 
     <menuitem name="Schedules" id="clv_external_sync.menu_base_config_config_external_sync_schedules" 
         parent="clv_external_sync.menu_base_config_config_external_sync"
         groups="clv_external_sync.group_user"
-        sequence="30"
+        sequence="40"
         action="clv_external_sync.clv_external_sync_schedule_action"/>
 
 </odoo>
