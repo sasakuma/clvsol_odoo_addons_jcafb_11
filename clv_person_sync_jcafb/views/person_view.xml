@@ -27,8 +27,8 @@
         <field name="inherit_id" ref="clv_person.clv_person_view_tree"/>
         <field name="priority" eval="8"/>
         <field name="arch" type="xml">
-            <field name="code" position="after">
-                <field name="external_sync"/>
+            <field name="email" position="before">
+                <field name="external_sync" invisible="True"/>
             </field>
         </field>
     </record>

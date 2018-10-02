@@ -27,8 +27,7 @@
         <field name="inherit_id" ref="clv_animal.clv_animal_view_tree"/>
         <field name="priority" eval="8"/>
         <field name="arch" type="xml">
-            <!--field name="code" position="after"-->
-            <field name="name" position="after">
+            <field name="email" position="before">
                 <field name="count_events"/>
             </field>
         </field>
