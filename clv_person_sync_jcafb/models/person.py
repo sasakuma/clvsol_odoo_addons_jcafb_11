@@ -9,6 +9,6 @@ from odoo import models
 _logger = logging.getLogger(__name__)
 
 
-class Document(models.Model):
+class Person(models.Model):
     _name = 'clv.person'
     _inherit = 'clv.person', 'clv.abstract.external_sync'
