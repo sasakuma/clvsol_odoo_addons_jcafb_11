@@ -10,7 +10,7 @@
         <field name="inherit_id" ref="clv_person.clv_person_view_form"/>
         <field name="priority" eval="8"/>
         <field name="arch" type="xml">
-            <group name="settings_left" position="inside">
+            <group name="settings_left_3" position="inside">
                 <field name="external_id"/>
                 <field name="external_last_update"/>
                 <field name="external_sync"/>
