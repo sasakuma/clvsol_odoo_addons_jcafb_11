@@ -2,7 +2,7 @@
 <!-- Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 
-<odoo noupdate="1">
+<odoo noupdate="0">
  
 	<record id="clv_document_clv_document" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.document (clv.document)&quot;&quot;&quot;"/>
@@ -29,9 +29,18 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_document_clv_document_object_field_date_requested" model="clv.external_sync.object_field">
+	<record id="clv_document_clv_document_object_field_date_inclusion" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;date_requested&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;date_requested&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;date_inclusion&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_document_clv_document"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_document_clv_document_object_field_ref_id" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
 		<field name="template_id" eval="clv_document_clv_document"/>

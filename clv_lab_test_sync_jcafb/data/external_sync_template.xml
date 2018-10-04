@@ -2,7 +2,7 @@
 <!-- Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 
-<odoo noupdate="1">
+<odoo noupdate="0">
  
 	<record id="clv_lab_test_request_clv_lab_test_request" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.request (clv.lab_test.request)&quot;&quot;&quot;"/>
@@ -15,6 +15,15 @@
 		<field name="external_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="True"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_lab_test_request_clv_lab_test_request_object_field_ref_id" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
 		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request"/>
 		<field name="sequence" eval="10"/>
@@ -36,6 +45,15 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="clv_lab_test_result_clv_lab_test_result_object_field_ref_id" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<record id="clv_lab_test_report_clv_lab_test_report" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.report (clv.lab_test.report)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.lab_test.report&quot;&quot;&quot;"/>
@@ -47,6 +65,15 @@
 		<field name="external_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="True"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_lab_test_report_clv_lab_test_report_object_field_ref_id" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
 		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report"/>
 		<field name="sequence" eval="10"/>
