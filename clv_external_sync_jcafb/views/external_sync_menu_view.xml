@@ -33,4 +33,16 @@
         sequence="40"
         action="clv_external_sync.clv_external_sync_schedule_action"/>
 
+    <menuitem name="Batches" id="clv_external_sync.menu_base_config_config_external_sync_batches" 
+        parent="clv_external_sync.menu_base_config_config_external_sync"
+        groups="clv_external_sync.group_user"
+        sequence="50"
+        action="clv_external_sync.clv_external_sync_batch_action"/>
+
+    <menuitem name="Members" id="clv_external_sync.menu_base_config_config_external_sync_batches_members" 
+        parent="clv_external_sync.menu_base_config_config_external_sync_batches"
+        groups="clv_external_sync.group_user"
+        sequence="10"
+        action="clv_external_sync.clv_external_sync_batch_member_actions"/>
+
 </odoo>
