@@ -15,6 +15,7 @@
         'clv_external_sync',
     ],
     'data': [
+        'views/lab_test_type_view.xml',
         'views/lab_test_request_view.xml',
         'views/lab_test_result_view.xml',
         'views/lab_test_report_view.xml',
