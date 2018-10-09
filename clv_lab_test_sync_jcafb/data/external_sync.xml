@@ -4,79 +4,94 @@
 
 <odoo noupdate="0">
  
-	<record id="clv_lab_test_request_clv_lab_test_request" model="clv.external_sync.template">
+	<record id="clv_lab_test_request_clv_lab_test_request_template" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.request (clv.lab_test.request)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.lab_test.request&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.lab_test.request&quot;&quot;&quot;"/>
 	</record>
 	 
-	<record id="clv_lab_test_request_clv_lab_test_request_object_field_code" model="clv.external_sync.object_field">
+	<record id="clv_lab_test_request_clv_lab_test_request_template_object_field_code" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="True"/>
 		<field name="update" eval="True"/>
-		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request"/>
+		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_lab_test_request_clv_lab_test_request_object_field_ref_id" model="clv.external_sync.object_field">
+	<record id="clv_lab_test_request_clv_lab_test_request_template_object_field_ref_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
-		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request"/>
+		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_lab_test_result_clv_lab_test_result" model="clv.external_sync.template">
+	<record id="clv_lab_test_request_clv_lab_test_request_schedule" model="clv.external_sync.schedule">
+		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.request (clv.lab_test.request)&quot;&quot;&quot;"/>
+		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request_template"/>
+	</record>
+	 
+	<record id="clv_lab_test_result_clv_lab_test_result_template" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.result (clv.lab_test.result)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.lab_test.result&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.lab_test.result&quot;&quot;&quot;"/>
 	</record>
 	 
-	<record id="clv_lab_test_result_clv_lab_test_result_object_field_code" model="clv.external_sync.object_field">
+	<record id="clv_lab_test_result_clv_lab_test_result_template_object_field_code" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="True"/>
 		<field name="update" eval="True"/>
-		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result"/>
+		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_lab_test_result_clv_lab_test_result_object_field_ref_id" model="clv.external_sync.object_field">
+	<record id="clv_lab_test_result_clv_lab_test_result_template_object_field_ref_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
-		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result"/>
+		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_lab_test_report_clv_lab_test_report" model="clv.external_sync.template">
+	<record id="clv_lab_test_result_clv_lab_test_result_schedule" model="clv.external_sync.schedule">
+		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.result (clv.lab_test.result)&quot;&quot;&quot;"/>
+		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result_template"/>
+	</record>
+	 
+	<record id="clv_lab_test_report_clv_lab_test_report_template" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.report (clv.lab_test.report)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.lab_test.report&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.lab_test.report&quot;&quot;&quot;"/>
 	</record>
 	 
-	<record id="clv_lab_test_report_clv_lab_test_report_object_field_code" model="clv.external_sync.object_field">
+	<record id="clv_lab_test_report_clv_lab_test_report_template_object_field_code" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="True"/>
 		<field name="update" eval="True"/>
-		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report"/>
+		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_lab_test_report_clv_lab_test_report_object_field_ref_id" model="clv.external_sync.object_field">
+	<record id="clv_lab_test_report_clv_lab_test_report_template_object_field_ref_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
-		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report"/>
+		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report_template"/>
 		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_lab_test_report_clv_lab_test_report_schedule" model="clv.external_sync.schedule">
+		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.report (clv.lab_test.report)&quot;&quot;&quot;"/>
+		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report_template"/>
 	</record>
 	 
 </odoo>
