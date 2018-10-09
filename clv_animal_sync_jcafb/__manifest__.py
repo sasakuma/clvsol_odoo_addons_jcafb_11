@@ -16,7 +16,7 @@
     ],
     'data': [
         'views/animal_view.xml',
-        'data/external_sync_template.xml',
+        'data/external_sync.xml',
     ],
     'demo': [],
     'test': [],

@@ -18,7 +18,7 @@
         'views/lab_test_request_view.xml',
         'views/lab_test_result_view.xml',
         'views/lab_test_report_view.xml',
-        'data/external_sync_template.xml',
+        'data/external_sync.xml',
     ],
     'demo': [],
     'test': [],
