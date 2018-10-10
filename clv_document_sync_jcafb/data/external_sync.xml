@@ -61,4 +61,9 @@
 		<field name="template_id" eval="clv_document_clv_document_template"/>
 	</record>
 	 
+	<record id="clv_external_sync_batch_member_clv_document" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_document_clv_document_schedule"/>
+	</record>
+	 
 </odoo>

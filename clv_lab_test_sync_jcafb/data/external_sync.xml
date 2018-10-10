@@ -52,6 +52,11 @@
 		<field name="template_id" eval="clv_lab_test_unit_clv_lab_test_unit_template"/>
 	</record>
 	 
+	<record id="clv_external_sync_batch_member_clv_lab_test_unit" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_lab_test_unit_clv_lab_test_unit_schedule"/>
+	</record>
+	 
 	<record id="clv_lab_test_type_clv_lab_test_type_template" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.type (clv.lab_test.type)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.lab_test.type&quot;&quot;&quot;"/>
@@ -91,6 +96,11 @@
 		<field name="template_id" eval="clv_lab_test_type_clv_lab_test_type_template"/>
 	</record>
 	 
+	<record id="clv_external_sync_batch_member_clv_lab_test_type" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_lab_test_type_clv_lab_test_type_schedule"/>
+	</record>
+	 
 	<record id="clv_lab_test_request_clv_lab_test_request_template" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.request (clv.lab_test.request)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.lab_test.request&quot;&quot;&quot;"/>
@@ -119,6 +129,11 @@
 	<record id="clv_lab_test_request_clv_lab_test_request_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.request (clv.lab_test.request)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request_template"/>
+	</record>
+	 
+	<record id="clv_external_sync_batch_member_clv_lab_test_request" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_lab_test_request_clv_lab_test_request_schedule"/>
 	</record>
 	 
 	<record id="clv_lab_test_result_clv_lab_test_result_template" model="clv.external_sync.template">
@@ -151,6 +166,11 @@
 		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result_template"/>
 	</record>
 	 
+	<record id="clv_external_sync_batch_member_clv_lab_test_result" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_lab_test_result_clv_lab_test_result_schedule"/>
+	</record>
+	 
 	<record id="clv_lab_test_report_clv_lab_test_report_template" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.report (clv.lab_test.report)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.lab_test.report&quot;&quot;&quot;"/>
@@ -179,6 +199,11 @@
 	<record id="clv_lab_test_report_clv_lab_test_report_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.report (clv.lab_test.report)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report_template"/>
+	</record>
+	 
+	<record id="clv_external_sync_batch_member_clv_lab_test_report" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_lab_test_report_clv_lab_test_report_schedule"/>
 	</record>
 	 
 	<record id="clv_lab_test_criterion_clv_lab_test_criterion_template" model="clv.external_sync.template">
@@ -290,6 +315,11 @@
 	<record id="clv_lab_test_criterion_clv_lab_test_criterion_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.criterion (clv.lab_test.criterion)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_lab_test_criterion_clv_lab_test_criterion_template"/>
+	</record>
+	 
+	<record id="clv_external_sync_batch_member_clv_lab_test_criterion" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_lab_test_criterion_clv_lab_test_criterion_schedule"/>
 	</record>
 	 
 </odoo>
