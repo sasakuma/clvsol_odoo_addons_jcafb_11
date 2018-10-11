@@ -47,6 +47,15 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="clv_lab_test_unit_clv_lab_test_unit_template_object_field_active" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_unit_clv_lab_test_unit_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<record id="clv_lab_test_unit_clv_lab_test_unit_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.unit (clv.lab_test.unit)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_lab_test_unit_clv_lab_test_unit_template"/>
@@ -91,6 +100,15 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="clv_lab_test_type_clv_lab_test_type_template_object_field_active" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_type_clv_lab_test_type_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<record id="clv_lab_test_type_clv_lab_test_type_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.type (clv.lab_test.type)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_lab_test_type_clv_lab_test_type_template"/>
@@ -120,6 +138,15 @@
 	<record id="clv_lab_test_request_clv_lab_test_request_template_object_field_ref_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_lab_test_request_clv_lab_test_request_template_object_field_active" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
 		<field name="template_id" eval="clv_lab_test_request_clv_lab_test_request_template"/>
@@ -161,6 +188,15 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="clv_lab_test_result_clv_lab_test_result_template_object_field_active" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<record id="clv_lab_test_result_clv_lab_test_result_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.lab_test.result (clv.lab_test.result)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_lab_test_result_clv_lab_test_result_template"/>
@@ -190,6 +226,15 @@
 	<record id="clv_lab_test_report_clv_lab_test_report_template_object_field_ref_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_lab_test_report_clv_lab_test_report_template_object_field_active" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
 		<field name="template_id" eval="clv_lab_test_report_clv_lab_test_report_template"/>
@@ -306,6 +351,15 @@
 	<record id="clv_lab_test_criterion_clv_lab_test_criterion_template_object_field_lab_test_report_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;lab_test_report_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;lab_test_report_id&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_lab_test_criterion_clv_lab_test_criterion_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_lab_test_criterion_clv_lab_test_criterion_template_object_field_active" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="False"/>
 		<field name="update" eval="True"/>
 		<field name="template_id" eval="clv_lab_test_criterion_clv_lab_test_criterion_template"/>
