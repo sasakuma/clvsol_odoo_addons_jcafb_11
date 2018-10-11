@@ -29,9 +29,23 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="clv_event_clv_event_template_object_field_active" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;active&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="False"/>
+		<field name="update" eval="True"/>
+		<field name="template_id" eval="clv_event_clv_event_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<record id="clv_event_clv_event_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.event (clv.event)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_event_clv_event_template"/>
+	</record>
+	 
+	<record id="clv_external_sync_batch_member_clv_event" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_event_clv_event_schedule"/>
 	</record>
 	 
 	<record id="clv_event_attendee_clv_event_attendee_template" model="clv.external_sync.template">
@@ -59,9 +73,14 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_event_attendee_clv_event_schedule_template" model="clv.external_sync.schedule">
+	<record id="clv_event_attendee_clv_event_attendee_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.event.attendee (clv.event.attendee)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_event_attendee_clv_event_attendee_template"/>
+	</record>
+	 
+	<record id="clv_external_sync_batch_member_clv_event_attendee" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_event_attendee_clv_event_attendee_schedule"/>
 	</record>
 	 
 </odoo>

@@ -15,6 +15,7 @@
     ],
     'data': [
         'views/external_sync_menu_view.xml',
+        'data/external_sync.xml',
     ],
     'demo': [],
     'test': [],
