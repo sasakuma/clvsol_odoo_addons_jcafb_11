@@ -39,10 +39,22 @@
         sequence="50"
         action="clv_external_sync.clv_external_sync_batch_action"/>
 
-    <menuitem name="Members" id="clv_external_sync.menu_base_config_config_external_sync_batches_members" 
+    <!--menuitem name="Members" id="clv_external_sync.menu_base_config_config_external_sync_batches_members" 
         parent="clv_external_sync.menu_base_config_config_external_sync_batches"
         groups="clv_external_sync.group_user"
         sequence="10"
+        action="clv_external_sync.clv_external_sync_batch_member_actions"/-->
+
+    <menuitem name="Batch Members" id="clv_external_sync.menu_base_config_config_external_sync_batch_members" 
+        parent="clv_external_sync.menu_base_config_config_external_sync"
+        groups="clv_external_sync.group_user"
+        sequence="60"
         action="clv_external_sync.clv_external_sync_batch_member_actions"/>
+
+    <menuitem name="External Syncs" id="clv_external_sync.menu_base_config_config_external_sync_external_syncs" 
+        parent="clv_external_sync.menu_base_config_config_external_sync"
+        groups="clv_external_sync.group_user"
+        sequence="90"
+        action="clv_external_sync.clv_external_sync_action"/>
 
 </odoo>
