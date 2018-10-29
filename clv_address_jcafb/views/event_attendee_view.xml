@@ -14,8 +14,8 @@
                 <page string="Events">
                     <group>
                         <field name="count_events"/>
-                        <field name="event_attendee_ids" colspan="4" nolabel="1"/>
                     </group>
+                    <field name="event_attendee_ids" colspan="4" nolabel="1"/>
                 </page>
             </page>
         </field>
@@ -27,8 +27,7 @@
         <field name="inherit_id" ref="clv_address.clv_address_view_tree"/>
         <field name="priority" eval="8"/>
         <field name="arch" type="xml">
-            <!--field name="code" position="after"-->
-            <field name="name" position="after">
+            <field name="email" position="before">
                 <field name="count_events"/>
             </field>
         </field>

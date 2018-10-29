@@ -15,6 +15,7 @@
     ],
     'data': [
         'views/base_menu_view.xml',
+        'views/config_settings_menu_view.xml',
         # 'views/mfmng_menu_view.xml',
         'views/community_menu_view.xml',
         'views/health_menu_view.xml',
